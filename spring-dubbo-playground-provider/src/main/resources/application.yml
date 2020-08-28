@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-dubbo-playground-provider
+dubbo:
+  application:
+    name: dubbo_provider
+  registry:
+    protocol: zookeeper
+    address: "zookeeper://192.168.80.131:2181"
+  protocol:
+    name: "dubbo"
+    port: 20880
+  scan:
+    base-packages: spring.dubbo.playground.common
